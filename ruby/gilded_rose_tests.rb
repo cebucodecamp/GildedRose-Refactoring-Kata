@@ -1,7 +1,7 @@
-require File.join(File.dirname(__FILE__), 'gilded_rose')
-require 'test/unit'
+require 'minitest/autorun'
+require File.expand_path('../gilded_rose', __FILE__)
 
-class TestUntitled < Test::Unit::TestCase
+class TestUntitled < MiniTest::Test
 
   def test_foo
     items = [Item.new("foo", 0, 0)]
